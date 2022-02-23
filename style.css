@@ -1,0 +1,210 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Typography */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-color: hsl(240, 78%, 98%);
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    color: hsl(233, 13%, 49%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+header p {
+    color: hsl(234, 14%, 74%);
+    margin: 0 20px;
+}
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.price_basic, .price_master, .price_professional, .price_basic_annually, .price_master_annually, .price_professional_annually {
+    font-size: 60px;
+    margin: 40px 0;
+}
+
+/* Container Basic & Master */
+#container_basic, #container_master {
+    width: 350px;
+    height: 470px;
+    margin-top: 30px;
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+    border: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0 1px 5px;
+    -moz-box-shadow: #666 0 1px 5px;
+    box-shadow: #666 0 1px 5px;
+    background: white;
+
+}
+
+.price_basic, .price_master {
+    color: hsl(232, 13%, 33%);
+}
+
+.price_professional_annually {
+    color: hsl(232, 13%, 33%);
+}
+
+.button_basic, .button_master {
+    width: 290px;
+    height: 45px;
+    margin: 30px 0 0 0;
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(240, 78%, 98%);
+    text-align: center;
+    border: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0 1px 5px;
+    -moz-box-shadow: #666 0 1px 5px;
+    box-shadow: #666 0 1px 5px;
+    letter-spacing: 1px;
+}
+.button_basic:active, .button_master:active {
+    background: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 64%);
+}
+
+/* Container professional */
+#container_professional {
+    color:  hsl(240, 78%, 98%);
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 350px;
+    height: 470px;
+    margin-top: 30px;
+    padding: 25px 0;
+    text-align: center;
+    border: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0 1px 5px;
+    -moz-box-shadow: #666 0 1px 5px;
+    box-shadow: #666 0 1px 5px;
+}
+.price_professional {
+    color: hsl(240, 78%, 98%);
+}
+
+.price_basic_annually, .price_master_annually {
+    color: hsl(240, 78%, 98%);
+}
+
+.button_professional {
+    background: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 64%);
+    width: 290px;
+    height: 45px;
+    margin: 30px 0 0 0;
+    text-align: center;
+    border: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: #666 0 1px 5px;
+    -moz-box-shadow: #666 0 1px 5px;
+    box-shadow: #666 0 1px 5px;
+    letter-spacing: 1px;
+}
+.button_professional:active {
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: hsl(240, 78%, 98%);
+}
+
+hr {
+    width: 300px;
+    opacity: 50%;
+    margin: 0 24px;
+}
