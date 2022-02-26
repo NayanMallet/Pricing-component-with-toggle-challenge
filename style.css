@@ -1,4 +1,3 @@
-/* Typography */
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -108,7 +107,7 @@ main {
 }
 
 
-.price_basic, .price_master, .price_professional, .price_basic_annually, .price_master_annually, .price_professional_annually {
+.price_basic, .price_master, .price_professional {
     font-size: 60px;
     margin: 40px 0;
 }
@@ -132,10 +131,6 @@ background: white;
 }
 
 .price_basic, .price_master {
-color: hsl(232, 13%, 33%);
-}
-
-.price_professional_annually {
 color: hsl(232, 13%, 33%);
 }
 
@@ -178,10 +173,6 @@ color: hsl(237, 63%, 64%);
     box-shadow: #666 0 1px 5px;
 }
 .price_professional {
-    color: hsl(240, 78%, 98%);
-}
-
-.price_basic_annually, .price_master_annually {
     color: hsl(240, 78%, 98%);
 }
 
